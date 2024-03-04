@@ -1,1 +1,364 @@
 menambah baris pertama
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git init
+Reinitialized existing Git repository in D:/tranning/git/sourceGit/.git/
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git code.
+git: 'code.' is not a git command. See 'git --help'.
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git code .
+git: 'code' is not a git command. See 'git --help'.
+
+The most similar command is
+        clone
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git code .
+git: 'code' is not a git command. See 'git --help'.
+
+The most similar command is
+        clone
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add file.txt
+fatal: pathspec 'file.txt' did not match any files
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add .
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commint -m "menambah file.txt"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commit -m "menambah file.txt"
+[master (root-commit) c0ac0a6] menambah file.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log
+commit c0ac0a6df50874df93c36f6d9464b9840c9d920f (HEAD -> master)
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:22:51 2024 +0700
+
+    menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add .
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commit -m "menambah baris pertama file.txt"
+[master 63d803e] menambah baris pertama file.txt
+ 1 file changed, 1 insertion(+)
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log
+commit 63d803e386321983f16993d048515f9389fc10bc (HEAD -> master)
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:24:45 2024 +0700
+
+    menambah baris pertama file.txt
+
+commit c0ac0a6df50874df93c36f6d9464b9840c9d920f
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:22:51 2024 +0700
+
+    menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log --oneline
+63d803e (HEAD -> master) menambah baris pertama file.txt
+c0ac0a6 menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add .
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commit -m "menambah file1.txt"
+[master fbf6942] menambah file1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log --oneline
+fbf6942 (HEAD -> master) menambah file1.txt
+63d803e menambah baris pertama file.txt
+c0ac0a6 menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log
+commit fbf69426821806addcdd3e7cab386496cfc9cc13 (HEAD -> master)
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:26:17 2024 +0700
+
+    menambah file1.txt
+
+commit 63d803e386321983f16993d048515f9389fc10bc
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:24:45 2024 +0700
+
+    menambah baris pertama file.txt
+
+commit c0ac0a6df50874df93c36f6d9464b9840c9d920f
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:22:51 2024 +0700
+
+    menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add .
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commit -m "menmbah baris pertam di file1.txt"
+[master 803456f] menmbah baris pertam di file1.txt
+ 1 file changed, 1 insertion(+)
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log --onelins
+fatal: unrecognized argument: --onelins
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log --oneline
+803456f (HEAD -> master) menmbah baris pertam di file1.txt
+fbf6942 menambah file1.txt
+63d803e menambah baris pertama file.txt
+c0ac0a6 menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add .
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commit -m "menambah file2.txt"
+[master 06b3baa] menambah file2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log
+commit 06b3baa0eb072784c5356933ea629432ab14d461 (HEAD -> master)
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:28:59 2024 +0700
+
+    menambah file2.txt
+
+commit 803456fef4541564e434ab20f9f8f14f56404f90
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:27:13 2024 +0700
+
+    menmbah baris pertam di file1.txt
+
+commit fbf69426821806addcdd3e7cab386496cfc9cc13
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:26:17 2024 +0700
+
+    menambah file1.txt
+
+commit 63d803e386321983f16993d048515f9389fc10bc
+Author: Muhammad Riyan Husain <muhriyanhusain@gmail.com>
+Date:   Mon Mar 4 11:24:45 2024 +0700
+
+    menambah baris pertama file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add file2.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file2.txt
+
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git commit -m "menghapus file2.txt"
+[master 4185a21] menghapus file2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file2.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git log --oneline
+4185a21 (HEAD -> master) menghapus file2.txt
+06b3baa menambah file2.txt
+803456f menmbah baris pertam di file1.txt
+fbf6942 menambah file1.txt
+63d803e menambah baris pertama file.txt
+c0ac0a6 menambah file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git restore file.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git restore file1.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git add .
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git restore --staged file1.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git restore file1.txt
+
+Administrator@Users MINGW64 /d/tranning/git/sourceGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Administrat
