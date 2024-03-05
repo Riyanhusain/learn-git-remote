@@ -6,4 +6,5 @@ menambahkan baris ke emapat
 menambah baris pertama
 menambahkan feature/1
 menambahkan feature/a
+menambahkan feature b 
 
