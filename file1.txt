@@ -1,9 +1,8 @@
-<<<<<<< HEAD
+
 menambah baris pertama
 perubahan pertama
 masih dalam perubahan pertama
 menambahkan baris ke emapat
-=======
 menambah baris pertama
->>>>>>> parent of aca6e58 (perubahan)
+menambahkan feature/1
 
