@@ -6,3 +6,4 @@ menambahkan baris ke emapat
 =======
 menambah baris pertama
 >>>>>>> parent of aca6e58 (perubahan)
+
